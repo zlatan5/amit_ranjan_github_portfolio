@@ -25,6 +25,8 @@ jobs:
         run: npm ci
       - name: Build Tailwind
         run: npm run build
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
       - name: Prepare Pages artifact
         run: node scripts/prepare-pages.js
       - name: Upload artifact
