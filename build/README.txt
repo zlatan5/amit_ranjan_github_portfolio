@@ -1,0 +1,1 @@
+This folder is the static artifact published to GitHub Pages.
