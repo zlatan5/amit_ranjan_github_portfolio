@@ -27,6 +27,8 @@ jobs:
         run: npm run build
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Prepare Pages artifact
         run: node scripts/prepare-pages.js
       - name: Upload artifact
